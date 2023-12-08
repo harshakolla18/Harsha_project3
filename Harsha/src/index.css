@@ -1,0 +1,87 @@
+/* ==================== GOOGLE FONTS ====================*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-size: 0.938rem;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+.swiper {
+  width: 100%;
+  height: 25vw;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  /* position: absolute; */
+  left: 15px;
+  right: 15px;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(-410px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(-410px);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: opacity 300ms, transform 300ms;
+}
